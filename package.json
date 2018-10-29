@@ -13,37 +13,39 @@
     "start": "node node_modules/grunt-cli/bin/grunt",
     "test": "node node_modules/grunt-cli/bin/grunt test",
     "postinstall": "node node_modules/bower/bin/bower install",
-    "dev": "npm install && make && node server.js"
+    "dev": "npm install && make && node server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "assert": "^1.1.1",
     "async": "^0.2.10",
-    "bower": "~1.3.2",
+    "bower": "~1.7.5",
     "cheerio": "^0.16.0",
     "connect-flash": "~0.1.1",
     "connect-mongo": "~0.4.0",
     "connect-redis": "1.4.7",
     "crypto": "0.0.3",
     "dropbox": "0.x",
-    "express": "~3.5.0",
+    "express": "~4.15.5",
     "express-cluster": "0.0.2",
-    "forever": "~0.10.11",
+    "forever": "~0.15.3",
     "gravatar": "^1.0.6",
-    "grunt": "~0.4.2",
-    "grunt-cli": "~0.1.11",
+    "grunt": "~1.0.0",
+    "grunt-cli": "~1.0.0",
     "grunt-contrib-concat": "latest",
-    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-jshint": "~0.11.1",
     "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-watch": "~1.0.0",
     "grunt-env": "~0.4.1",
     "grunt-karma": "~0.8.2",
-    "grunt-mocha-test": "~0.8.1",
+    "grunt-mocha-test": "~0.12.0",
     "grunt-nodemon": "0.1.2",
     "jade": "~1.0.2",
-    "karma": "~0.12.4",
+    "karma": "~0.13.12",
     "karma-chrome-launcher": "~0.1.0",
     "karma-coffee-preprocessor": "~0.2.1",
-    "karma-coverage": "~0.2.1",
+    "karma-coverage": "~0.5.3",
     "karma-firefox-launcher": "~0.1.0",
     "karma-html2js-preprocessor": "~0.1.0",
     "karma-jasmine": "~0.1.5",
@@ -61,7 +63,8 @@
     "should": "2.1.1",
     "toobusy": "^0.2.4",
     "view-helpers": "~0.1.4",
-    "validator": "^3.4.0"
+    "validator": "^3.4.0",
+    "snyk": "^1.105.0"
   },
   "devDependencies": {
     "grunt-concurrent": "latest",
@@ -88,5 +91,6 @@
     "karma-spec-reporter": "0.0.12",
     "should": "2.1.1",
     "supertest": "~0.10.0"
-  }
+  },
+  "snyk": true
 }
