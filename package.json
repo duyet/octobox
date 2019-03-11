@@ -25,7 +25,7 @@
     "connect-redis": "1.4.7",
     "crypto": "0.0.3",
     "dropbox": "0.x",
-    "express": "~3.5.0",
+    "express": "~3.11.0",
     "express-cluster": "0.0.2",
     "forever": "~0.10.11",
     "gravatar": "^1.0.6",
