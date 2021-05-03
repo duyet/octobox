@@ -61,7 +61,7 @@
     "should": "2.1.1",
     "toobusy": "^0.2.4",
     "view-helpers": "~0.1.4",
-    "validator": "^3.4.0"
+    "validator": "^13.6.0"
   },
   "devDependencies": {
     "grunt-concurrent": "latest",
